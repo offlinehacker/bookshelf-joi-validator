@@ -1,5 +1,5 @@
 {
-  "name": "bookshelf-joi-validate",
+  "name": "bookshelf-joi-validator",
   "version": "0.2.2",
   "description": "Bookshelf joi validation plugin validates model data using joi schema",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GateHubNet/bookshelf-joi-validate"
+    "url": "https://github.com/GateHubNet/bookshelf-joi-validator"
   },
   "keywords": [
     "bookshelf",
@@ -21,9 +21,9 @@
   "author": "Jaka Hudoklin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GateHubNet/bookshelf-joi-validate/issues"
+    "url": "https://github.com/GateHubNet/bookshelf-joi-validator/issues"
   },
-  "homepage": "https://github.com/GateHubNet/bookshelf-joi-validate",
+  "homepage": "https://github.com/GateHubNet/bookshelf-joi-validator",
   "dependencies": {
     "bluebird": "^2.9.34",
     "joi": "^6.6.1",
