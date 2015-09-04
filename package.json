@@ -1,6 +1,6 @@
 {
   "name": "bookshelf-joi-validate",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Bookshelf joi validation plugin validates model data using joi schema",
   "main": "index.js",
   "directories": {
