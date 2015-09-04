@@ -15,25 +15,25 @@ Then in your bookshelf configuration:
 
 Define bookshelf model:
 
-  var user = Joi.string().alphanum().min(3).max(30);
-  var pass = Joi.string().regex(/[a-zA-Z0-9]{3,30}/);
-  var uuid = Joi.string().guid();
+    var user = Joi.string().alphanum().min(3).max(30);
+    var pass = Joi.string().regex(/[a-zA-Z0-9]{3,30}/);
+    var uuid = Joi.string().guid();
 
-  var model = bookshelf.Model.extend({
-    tableName: 'users',
+    var model = bookshelf.Model.extend({
+      tableName: 'users',
 
-    schema: {
-      create: Joi.object().keys({
-        user: user.required(),
-        pass: pass.required(),
-        uuid: uuid.required()
-      }),
-      update: Joi.object().keys({
-        user: user,
-        pass: pass
-      })
-    }
-  });
+      schema: {
+        create: Joi.object().keys({
+          user: user.required(),
+          pass: pass.required(),
+          uuid: uuid.required()
+        }),
+        update: Joi.object().keys({
+          user: user,
+          pass: pass
+        })
+      }
+    });
 
 Upon saving or creation of model, plugin checks if data is valid, and on error
 raises joi validation error.
