@@ -1,6 +1,6 @@
 # Bookshelf joi valitator
 
-Bookshelf joi validation plugin validates data using joi schema
+Bookshelf joi validation plugin validates model data using joi schema
 
 ## Installation
 
@@ -44,4 +44,4 @@ raises joi validation error.
 
 ## Author
 
-[offlinehacker](mailto:jakahudoklin@gmail.com)
+[offlinehacker](https://github.com/offlinehacker)

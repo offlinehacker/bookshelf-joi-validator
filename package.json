@@ -1,7 +1,7 @@
 {
-  "name": "bookshelf-save-hooks",
-  "version": "0.1.1",
-  "description": "Bookshelf save hooks",
+  "name": "bookshelf-joi-validate",
+  "version": "0.0.0",
+  "description": "Bookshelf joi validation plugin validates model data using joi schema",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,19 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GateHubNet/bookshelf-save-hooks"
+    "url": "https://github.com/GateHubNet/bookshelf-joi-validate"
   },
   "keywords": [
     "bookshelf",
-    "save",
-    "hooks"
+    "joi",
+    "validate"
   ],
   "author": "Jaka Hudoklin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GateHubNet/bookshelf-save-hooks/issues"
+    "url": "https://github.com/GateHubNet/bookshelf-joi-validate/issues"
   },
-  "homepage": "https://github.com/GateHubNet/bookshelf-save-hooks",
+  "homepage": "https://github.com/GateHubNet/bookshelf-joi-validate",
   "dependencies": {
     "bluebird": "^2.9.34",
     "joi": "^6.6.1",
