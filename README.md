@@ -36,7 +36,7 @@ Define bookshelf model:
     });
 
 Upon saving or creation of model, plugin checks if data is valid, and on error
-raises joi validation error.
+raises `bookshelf.Model.ValidationError`
 
 ## License
 
