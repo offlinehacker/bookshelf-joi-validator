@@ -16,12 +16,6 @@ module.exports = function (bookshelf) {
 
   bookshelf.Model = Model.extend({
 
-    /**
-     * Fields to ignore by default
-     */
-    defaultIgnoreValidate:
-      ['updated_at', 'created_at', 'deleted_at', 'restored_at'],
-
     constructor: function() {
       Model.prototype.constructor.apply(this, arguments);
 
@@ -45,12 +39,7 @@ module.exports = function (bookshelf) {
      * @throws {ValidationError}
      */
     validateWith: function(schema) {
-      var changed = _.omit(
-        this.changed,
-        this.defaultIgnoreValidate.concat(this.ignoreValidate || [])
-      );
-
-      var result = Joi.validate(changed, schema);
+      var result = Joi.validate(this.changed, schema);
       if (result.error) {
         throw new ValidationError(result.error);
       }

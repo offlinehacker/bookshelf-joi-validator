@@ -21,6 +21,7 @@ describe('bookshelf transaction manager', function() {
   before(function() {
     return this.knex.schema
       .createTable('users', function(table) {
+        table.timestamps();
         table.increments('id').primary();
         table.string('user').unique();
         table.string('pass');
@@ -37,16 +38,20 @@ describe('bookshelf transaction manager', function() {
 
     this.User = this.bookshelf.Model.extend({
       tableName: 'users',
+      hasTimestamps: true,
 
       schema: {
         create: Joi.object().keys({
           user: user.required(),
           pass: pass.required(),
-          uuid: uuid.required()
+          uuid: uuid.required(),
+          created_at: Joi.date(),
+          updated_at: Joi.date()
         }),
         update: Joi.object().keys({
           user: user.optional(),
-          pass: pass.optional()
+          pass: pass.optional(),
+          updated_at: Joi.date()
         })
       }
     });
