@@ -25,17 +25,17 @@
   },
   "homepage": "https://github.com/GateHubNet/bookshelf-joi-validator",
   "dependencies": {
-    "bluebird": "^2.9.34",
-    "joi": "^6.6.1",
-    "lodash": "^3.10.0"
+    "bluebird": "^3.5.0",
+    "joi": "^11.1.1",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "bookshelf": "^0.8.1",
-    "chai": "^3.1.0",
-    "chai-as-promised": "^5.1.0",
-    "knex": "^0.8.6",
-    "mocha": "^2.3.0",
-    "npm-release": "0.0.4-3",
+    "bookshelf": "^0.10.4",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "knex": "^0.13.0",
+    "mocha": "^3.5.3",
+    "npm-release": "1.0.0",
     "sqlite3": "^3.0.9"
   }
 }
