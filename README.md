@@ -1,5 +1,7 @@
 # Bookshelf joi valitator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/offlinehacker/bookshelf-joi-validator.svg)](https://greenkeeper.io/)
+
 Bookshelf joi validation plugin validates model data using joi schema
 
 ## Installation
